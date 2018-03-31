@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app2"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/die_face_1"
+        android:id="@+id/left_top"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/die_face_2"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/left_top"
+        android:id="@+id/right_top"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/die_face_3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/left_mid"
+        android:layout_below="@+id/left_top"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/die_face_4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/right_mid"
+        android:layout_toRightOf="@id/left_mid"
+        android:layout_below="@+id/right_top"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/die_face_5"
+        android:layout_marginTop="20dp"
+        android:id="@+id/left_bottom"
+        android:layout_below="@+id/left_mid" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/die_face_6"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/right_mid"
+        android:id="@+id/right_bottom"
+        android:layout_toRightOf="@+id/left_bottom"/>
+
+</RelativeLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Hit Me Up!!"
+    android:textColor="#000000"
+    android:layout_marginTop="20dp"
+    android:id="@+id/hit"
+    android:background="#cdc0b0"/>
+</LinearLayout>
